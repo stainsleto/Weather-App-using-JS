@@ -1,0 +1,17 @@
+.main-box{
+    display:flex;
+    flex-direction:column;
+    border: 1px solid black;
+   
+    margin:60px 450px 0px 450px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.inner-box{
+    border:1px solid black;
+    margin:20px;
+    padding:20px;
+  
+}
