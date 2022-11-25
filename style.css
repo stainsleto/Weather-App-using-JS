@@ -1,12 +1,15 @@
 .main-box{
     display:flex;
     flex-direction:column;
-    border: 1px solid black;
    
-    margin:60px 450px 0px 450px;
+    margin:60px 350px 0px 350px;
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+#main-title{
+    text-align:center;
 }
 
 .inner-box{
