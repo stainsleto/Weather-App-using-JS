@@ -4,9 +4,15 @@ const long = 	80.237617
 const currentWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${long}&appid=${apiKey}`)
 const allData = currentWeather.then(response => response.json());
 const data = allData.then( (daata) => {
-    document.getElementById('temp').textContent = `${daata.main.temp}`;
-    document.getElementById('desc').textContent = `${daata.weather[0].main}`;
-    document.getElementById('name').textContent = `${daata.name}`;
+    document.getElementById("weather-info").textContent = daata.weather[0].main;
+    const temperature = daata.main.temp - 273;
+    document.getElementById("temperature").textContent = temperature.toFixed(2);
+    const mb = " mb";
+    document.getElementById("pressure").textContent = daata.main.pressure + mb;
+    const per = " %";
+    document.getElementById("humidity").textContent = daata.main.humidity + per;
+    const km = " Km";
+    document.getElementById("visiblity").textContent = daata.visibility/1000 +km ;
 });
 console.log(allData)
 

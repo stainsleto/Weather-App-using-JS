@@ -18,3 +18,70 @@
     padding:20px;
   
 }
+
+/* dash page */
+
+#header{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#hero{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    margin-top:5em;
+   
+}
+
+#weather-box{
+    width:40vw;
+    height:30vh;
+    background-color: bisque;
+    padding:20px 20px 20px 20px;
+    border-radius:20px;
+}
+
+#weather-desc{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    gap:10px;
+    
+}
+
+#pressure-box{
+    height:10vh;
+    width:20vw;
+    background-color: azure;
+    border-radius: 10px;
+}
+
+#humidity-box{
+    height:10vh;
+    width:20vw;
+    background-color: azure;
+    border-radius: 10px;
+
+}
+
+#visiblity-box{
+    height:10vh;
+    width:20vw;
+    background-color: azure;
+    border-radius: 10px;
+
+}
+
+#wind-box{
+    width:40vw;
+    height:30vh;
+    padding:20px;
+    background-color:aquamarine;
+    border-radius:20px;
+}
