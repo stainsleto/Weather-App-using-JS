@@ -1,3 +1,7 @@
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
 .main-box{
     display:flex;
     flex-direction:column;
