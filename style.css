@@ -40,7 +40,7 @@
 }
 
 #weather-box{
-    width:40vw;
+    width:30vw;
     height:30vh;
     background-color: bisque;
     padding:20px 20px 20px 20px;
@@ -57,14 +57,14 @@
 
 #pressure-box{
     height:10vh;
-    width:20vw;
+    width:10vw;
     background-color: azure;
     border-radius: 10px;
 }
 
 #humidity-box{
     height:10vh;
-    width:20vw;
+    width:10vw;
     background-color: azure;
     border-radius: 10px;
 
@@ -72,14 +72,14 @@
 
 #visiblity-box{
     height:10vh;
-    width:20vw;
+    width:10vw;
     background-color: azure;
     border-radius: 10px;
 
 }
 
 #wind-box{
-    width:40vw;
+    width:30vw;
     height:30vh;
     padding:20px;
     background-color:aquamarine;
