@@ -19,7 +19,10 @@
                 <h4>Hello 👋</h4>
             </div>
             <div id="search">
-                <input id="search-bar" placeholder="Enter City Name" type="search">
+                <form>
+                    <input id="city-input" placeholder="Enter City Name " type="text">
+                    <button type="button" onclick="getWeather();">Get Weather Info </button>
+                </form>
             </div>
         </div>
 
@@ -64,9 +67,18 @@
                 <!-- Three div box -->
 
                 <div id="city-description">
-                    <div id="wind-speed"></div>
-                    <div id="temp-min"></div>
-                    <div id="temp-max"></div>
+                    <div id="wind-speed">
+                        <p class="city-desc-title">Wind Speed</p>
+                        <p id="wind-speed-value" class="city-value"></p>
+                    </div>
+                    <div id="temp-min">
+                        <p class="city-desc-title">Temp Min</p>
+                        <p id="temp-min-value" class="city-value"></p>
+                    </div>
+                    <div id="temp-max">
+                        <p class="city-desc-title">Temp Max</p>
+                        <p id="temp-max-value" class="city-value"></p>
+                    </div>
                 </div>
                 
             </div>

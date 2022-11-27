@@ -132,7 +132,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight:500;
     font-size:14px;
-    text-align: center;;
+    text-align: center;
 }
 
 .weather-dec-value{
@@ -166,6 +166,7 @@
     display:flex;
     flex-direction:row;
     gap:10px;
+    margin-top:53px;
     
 }
 #wind-speed{
@@ -174,4 +175,35 @@
     background-color: #1a2940;
     color:#fffefe;
     border-radius: 10px;
+}
+
+#temp-min{
+    height:10vh;
+    width:7em;
+    background-color: #cae16b;
+    color:#1a2940;
+    border-radius: 10px;
+}
+
+#temp-max{
+    height:10vh;
+    width:7em;
+    background-color: #fffefe;
+    color:#1a293f;
+    border-radius: 10px;
+}
+
+.city-desc-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size:14px;
+    text-align: center;
+}
+
+.city-value{
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size:18px;
+    text-align: center;
+    margin-top:-7px;
 }
