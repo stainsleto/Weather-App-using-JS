@@ -8,10 +8,11 @@ function getWeather(){
     const country = "India"; 
     const geo = fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=5&appid=${apiKey}`);
     const geoData = geo.then( (response) => response.json());
-    const lati = geoData.then((data) => data[0].lon);
-    const longi = geoData.then( (data) => data[0].lat);
+    const lati = geoData.then((data) => data[0].lat);
+    const longi = geoData.then( (data) => data[0].lon);
     console.log(lati)
-    
+    console.log(longi)
+
      // Geo API  ------------------------ Ends ----------- 
 
     const currentWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${longi}&appid=${apiKey}`)
@@ -20,7 +21,6 @@ function getWeather(){
     const data = allData.then( (daata) => {
         document.getElementById("weather-info").textContent = daata.weather[0].main;
         const temperature = (daata.main.temp - 273).toFixed(0)+ '°C';
-
         document.getElementById("temperature").textContent = temperature;
         const mb = " mb";
         document.getElementById("pressure").textContent = daata.main.pressure + mb;
