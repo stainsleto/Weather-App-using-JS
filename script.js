@@ -16,6 +16,8 @@ const data = allData.then( (daata) => {
     document.getElementById("visiblity").textContent = daata.visibility/1000 +km ;
     document.getElementById("city").textContent = daata.name;
     document.getElementById("wind-speed").textContent = (daata.wind.speed) + " Km/h" ;
+    document.getElementById("temp-min").textContent = (daata.main.temp_min - 273).toFixed(0) + "°C";
+    document.getElementById("temp-max").textContent = (daata.main.temp_max - 273).toFixed(0) + "°C";
 });
 console.log(allData)
 
