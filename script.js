@@ -5,14 +5,17 @@ const currentWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?la
 const allData = currentWeather.then(response => response.json());
 const data = allData.then( (daata) => {
     document.getElementById("weather-info").textContent = daata.weather[0].main;
-    const temperature = daata.main.temp - 273;
-    document.getElementById("temperature").textContent = temperature.toFixed(2);
+    const temperature = (daata.main.temp - 273).toFixed(0)+ '°C';
+
+    document.getElementById("temperature").textContent = temperature;
     const mb = " mb";
     document.getElementById("pressure").textContent = daata.main.pressure + mb;
     const per = " %";
     document.getElementById("humidity").textContent = daata.main.humidity + per;
     const km = " Km";
     document.getElementById("visiblity").textContent = daata.visibility/1000 +km ;
+    document.getElementById("city").textContent = daata.name;
+    document.getElementById("wind-speed").textContent = (daata.wind.speed) + " Km/h" ;
 });
 console.log(allData)
 

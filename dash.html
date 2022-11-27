@@ -14,7 +14,10 @@
 <body>
     <div id="main">
         <div id="header">
-            <div id="hello-box"><h4>Hello 👋</h4></div>
+            <div id="hello-box">
+                <img src="./images/profile.png" />
+                <h4>Hello 👋</h4>
+            </div>
             <div id="search">
                 <input id="search-bar" placeholder="Enter City Name" type="search">
             </div>
@@ -22,35 +25,50 @@
 
         <div id="hero">
             <div id="weather-box">
-                <div id="weather-info">
-                   
+                <div id="weather-info-box">
+                    <img src="./images/clouds.png" />
+                    <h4>Weather</h4>
                 </div>
                 <div id="temperature">
-                    
                 </div>
+                <div id="weather-info">    
+                </div> 
                 
                 <!-- Three box -->
 
                 <div id="weather-desc">
                     
                     <div id="pressure-box">
-                        <h6>Pressure</h6>
-                        <p id="pressure"></p>
+                        <p class="weather-desc-title">Pressure</p>
+                        <p id="pressure" class="weather-dec-value"></p>
                     </div>
                     <div id="humidity-box">
-                        <h6>Humidity</h6>
-                        <p id="humidity"></p>
+                        <p class="weather-desc-title" >Humidity</p>
+                        <p id="humidity" class="weather-dec-value"></p>
                     </div>
                     <div id="visiblity-box">
-                        <h6>Visiblity</h6>
-                        <p id="visiblity"></p>
+                        <p class="weather-desc-title" >Visiblity</p>
+                        <p id="visiblity" class="weather-dec-value"></p>
                     </div>
                     
                 </div>
             </div>
             <div id="wind-box">
-                <div id="wind-speed"></div>
+                <div id="wind-hero-box">
+                    <img src="./images/city.png" />
+                    <h4 id="wind-hero-title">City Info</h4>
+                </div>
                 <div id="city"></div>
+                
+
+                <!-- Three div box -->
+
+                <div id="city-description">
+                    <div id="wind-speed"></div>
+                    <div id="temp-min"></div>
+                    <div id="temp-max"></div>
+                </div>
+                
             </div>
         </div>
     </div>

@@ -5,7 +5,6 @@
 .main-box{
     display:flex;
     flex-direction:column;
-   
     margin:60px 350px 0px 350px;
     align-items: center;
     justify-content: center;
@@ -43,49 +42,116 @@
    
 }
 
+#hello-box{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:17px;
+}
+
+#hello-box img{
+    width:50px;
+    height:50px;
+}
+
 #weather-box{
-    width:30vw;
-    height:30vh;
+    width:25vw;
+    height:35vh;
     background-color: bisque;
-    padding:20px 20px 20px 20px;
+    padding:20px 30px 30px 30px;
     border-radius:20px;
+}
+#weather-info-box{
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+    align-items: center;
+}
+#weather-info{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:1em;
+    margin: -5px 0px 30px 0px;
+}
+#weather-box img{
+    width:40px;
+    height:40px;
+    border-radius:100px;
 }
 
 #weather-desc{
     display:flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    
     gap:10px;
     
+    
+}
+
+#temperature{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:2em;
+    margin-top: 0px 0px -10px 0px;
 }
 
 #pressure-box{
     height:10vh;
-    width:10vw;
-    background-color: azure;
+    width:7em;
+    background-color: #1a2940;
+    color:#fffefe;
     border-radius: 10px;
 }
 
 #humidity-box{
     height:10vh;
-    width:10vw;
-    background-color: azure;
+    width:7em;
+    background-color: #cae16b;
+    color:#1a2940;
     border-radius: 10px;
 
 }
 
 #visiblity-box{
     height:10vh;
-    width:10vw;
-    background-color: azure;
+    width:7em;
+    background-color: #fffefe;
+    color:#1a293f;
     border-radius: 10px;
-
 }
 
 #wind-box{
-    width:30vw;
-    height:30vh;
-    padding:20px;
     background-color:aquamarine;
+    width:25vw;
+    height:35vh;
+    padding:20px 30px 30px 30px;
     border-radius:20px;
+}
+
+.weather-desc-title{
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    font-size:14px;
+    text-align: center;;
+}
+
+.weather-dec-value{
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size:18px;
+    text-align: center;
+    margin-top:-7px;
+}
+
+#wind-hero-box{
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+    align-items: center;
+
+}
+
+#wind-hero-box img{
+    width:40px;
+    height:40px;
 }
