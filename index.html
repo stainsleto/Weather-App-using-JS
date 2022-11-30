@@ -4,33 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="Stylesheet" href="style.css">
     <title>Weather App</title>
-    <script src="script.js" defer> </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="main-box">
-    <h1 id="main-title">Weather App</h1>
-    <div class="current-weather inner-box">
+    <div id="main">
+        <div id="header">
+            <div id="hello-box">
+                <img src="./images/profile.png" />
+                <h4>Hello 👋</h4>
+            </div>
+            <div id="search">
+                <form>
+                    <input id="city-input" placeholder="Enter City Name "  type="text">
+                    <button type="button" onclick="getWeather();">Get Weather Info </button>
+                </form>
+            </div>
+        </div>
 
-        <h2 id="name">City Name</h2>
-        <p id="temp">Temp</p>
-        <p id="desc">Description</p>
-        <p>High low</p>
+        <div id="hero">
+            <div id="weather-box">
+                <div id="weather-info-box">
+                    <img src="./images/clouds.png" />
+                    <h4>Weather</h4>
+                </div>
+                <div id="temperature">
+                </div>
+                <div id="weather-info">    
+                </div> 
+                
+                <!-- Three box -->
+
+                <div id="weather-desc">
+                    
+                    <div id="pressure-box">
+                        <p class="weather-desc-title">Pressure</p>
+                        <p id="pressure" class="weather-dec-value"></p>
+                    </div>
+                    <div id="humidity-box">
+                        <p class="weather-desc-title" >Humidity</p>
+                        <p id="humidity" class="weather-dec-value"></p>
+                    </div>
+                    <div id="visiblity-box">
+                        <p class="weather-desc-title" >Visiblity</p>
+                        <p id="visiblity" class="weather-dec-value"></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="wind-box">
+                <div id="wind-hero-box">
+                    <img src="./images/city.png" />
+                    <h4 id="wind-hero-title">City Info</h4>
+                </div>
+                <div id="city"></div>
+                
+
+                <!-- Three div box -->
+
+                <div id="city-description">
+                    <div id="wind-speed">
+                        <p class="city-desc-title">Wind Speed</p>
+                        <p id="wind-speed-value" class="city-value"></p>
+                    </div>
+                    <div id="temp-min">
+                        <p class="city-desc-title">Temp Min</p>
+                        <p id="temp-min-value" class="city-value"></p>
+                    </div>
+                    <div id="temp-max">
+                        <p class="city-desc-title">Temp Max</p>
+                        <p id="temp-max-value" class="city-value"></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
-    <div class="hourly-weather inner-box">
-        <h2>Hourly Forecast</h2>
-        <p>Now</p>
-        <p>icon</p>
-        <p>temp</p>
-    </div>
-    <div class="five-day-forecast inner-box">
-        <h2>5 day Forecast</h2>
-        <p>Today</p>
-        <p>icon</p>
-        <p>low</p>
-        <p> high</p>
-    </div>
-  </div>  
+    
 </body>
 </html>
