@@ -1,21 +1,10 @@
 function getWeather(){
-    const apiKey = "335a8a39a3281df7c50e7f934988de31";
+    const apiKey = config.apiKey;
     
-    // Geo API  ------------------------ Begins ------
 
-    const city = document.getElementById('city-input').value;
-    console.log(city)
-    const country = "India"; 
-    const geo = fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=5&appid=${apiKey}`);
-    const geoData = geo.then( (response) => response.json());
-    const lati = geoData.then((data) => data[0].lat);
-    const longi = geoData.then( (data) => data[0].lon);
-    console.log(lati)
-    console.log(longi)
+    const city = document.getElementById('city-input').value;  // city Info
 
-     // Geo API  ------------------------ Ends ----------- 
-
-    const currentWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${longi}&appid=${apiKey}`)
+    const currentWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
     const allData = currentWeather.then(response => response.json());
     
     const data = allData.then( (daata) => {
