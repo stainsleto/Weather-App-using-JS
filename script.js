@@ -1,3 +1,13 @@
+const hero = document.getElementById('hero');
+
+if (document.getElementById('city-input').value == "" ){
+    hero.hide()
+}
+else{
+    hero.show()
+}
+
+
 function getWeather(){
     const apiKey = config.apiKey;
     
