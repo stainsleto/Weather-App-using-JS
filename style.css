@@ -39,6 +39,7 @@
     justify-content:center;
     gap:30px;
     margin-top:5em;
+    flex-wrap: wrap;
    
 }
 
@@ -166,7 +167,7 @@
     display:flex;
     flex-direction:row;
     gap:10px;
-    margin-top:53px;
+    margin: -5px 0px 30px 0px;
     
 }
 #wind-speed{
@@ -206,4 +207,11 @@
     font-size:18px;
     text-align: center;
     margin-top:-7px;
+}
+
+#weather-description{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:1em;
+    margin: -5px 0px 30px 0px;
 }
