@@ -56,8 +56,7 @@
 }
 
 #weather-box{
-    width:25vw;
-    height:35vh;
+    width:27vw;
     background-color: bisque;
     padding:20px 30px 30px 30px;
     border-radius:20px;
@@ -83,9 +82,10 @@
 #weather-desc{
     display:flex;
     flex-direction:row;
-    
+    flex-wrap:wrap;
     gap:10px;
-    
+    align-items: center;
+    justify-content: center;    
     
 }
 
@@ -121,10 +121,9 @@
     border-radius: 10px;
 }
 
-#wind-box{
+#city-box{
     background-color:aquamarine;
-    width:25vw;
-    height:35vh;
+    width:27vw;
     padding:20px 30px 30px 30px;
     border-radius:20px;
 }
@@ -144,7 +143,7 @@
     margin-top:-7px;
 }
 
-#wind-hero-box{
+#city-hero-box{
     display:flex;
     flex-direction:row;
     gap:15px;
@@ -152,7 +151,7 @@
 
 }
 
-#wind-hero-box img{
+#city-hero-box img{
     width:40px;
     height:40px;
 }
@@ -166,8 +165,10 @@
 #city-description{
     display:flex;
     flex-direction:row;
+    flex-wrap:wrap;
     gap:10px;
     margin: -5px 0px 30px 0px;
+    justify-content:center;
     
 }
 #wind-speed{
@@ -207,6 +208,7 @@
     font-size:18px;
     text-align: center;
     margin-top:-7px;
+    
 }
 
 #weather-description{
@@ -214,4 +216,15 @@
     font-weight: 500;
     font-size:1em;
     margin: -5px 0px 30px 0px;
+}
+
+@media (max-width:500) {
+    .city-value {
+        font-size:12px;
+    }
+    #pressure-box{
+        width:10em;
+    }
+
+
 }
