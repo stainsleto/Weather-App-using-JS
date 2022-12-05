@@ -2,6 +2,11 @@
     font-family: 'Poppins', sans-serif;
 
 }
+
+body{
+    background-image: url(./images/background.jpg);
+}
+
 .main-box{
     display:flex;
     flex-direction:column;
@@ -29,7 +34,17 @@
     flex-direction:row;
     justify-content: space-around;
     align-items: center;
+    background-color: #ffffff;
+    padding:10px;
+    border-radius: 20px;
+    margin: 20px 60px 0px 60px;
     
+}
+
+#search-icon{
+    width:20px;
+    height:20px;
+    margin: 0px 0px 0px 15px;
 }
 
 #hero{
@@ -40,6 +55,8 @@
     gap:30px;
     margin-top:5em;
     flex-wrap: wrap;
+    
+    
    
 }
 
@@ -126,6 +143,11 @@
     width:27vw;
     padding:20px 30px 30px 30px;
     border-radius:20px;
+}
+
+#city-input{
+    border: 2px solid black;
+    border-radius:30px;
 }
 
 .weather-desc-title{
