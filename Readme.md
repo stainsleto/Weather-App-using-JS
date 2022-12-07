@@ -24,13 +24,13 @@ Used Promises in JavaScript to fetch data from the Json File
 
 
 
-### API Details
+## API Details
 
 Get API from  -->  https://openweathermap.org/api
 
 Insert your API Key inside apiKey const and remove the config text present there.
 
-#### Author 
+## Author 
 
 linkedin - linkedin.com/in/stains-leto
 Twitter - twitter.com/letostains
