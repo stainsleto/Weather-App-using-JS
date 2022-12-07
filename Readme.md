@@ -1,6 +1,6 @@
-### Weather App using Vanilla JS 
+## Weather App using Vanilla JS 
 
-# Project Details
+## Project Details
 
 Created this Project using Basic VanillaJS 
 
