@@ -34,7 +34,7 @@ function getWeather(){
         document.getElementById("temp-max-value").textContent = (daata.main.temp_max - 273).toFixed(0) + "°C";
     });
 
-    console.log(allData)
+    
 
 
 }
