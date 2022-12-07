@@ -1,6 +1,6 @@
 ## Weather App using Vanilla JS 
 
-## 'Project Details'
+## Project Details
 
 Created this Project using Basic VanillaJS 
 
@@ -8,13 +8,13 @@ fetch() Method is used get the data from api
 
 Used Promises in JavaScript to fetch data from the Json File
 
-Normal Web View
+# Normal Web View
 
 ![alt text](https://github.com/stainsleto/Weather-App-using-JS/blob/main/repository/web-view.png?raw=true)
 
 
 
-Mobile View
+# Mobile View
 
 
 ![alt text](https://github.com/stainsleto/Weather-App-using-JS/blob/main/repository/mobile-view.png?raw=true)
