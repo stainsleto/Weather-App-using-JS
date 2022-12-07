@@ -8,7 +8,7 @@
 // }
 const button = document.getElementById('search-icon')
 
-button.addEventListener('touchstart',getWeather)
+button.addEventListener('touchstart',getWeather())
 
 
 function getWeather(){
