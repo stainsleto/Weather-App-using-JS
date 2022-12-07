@@ -9,7 +9,7 @@
 
 
 function getWeather(){
-    const apiKey = config.apiKey;
+    const apiKey = "b13b3dd8053e9d7f1016053308bd0eff";
     
 
     const city = document.getElementById('city-input').value;  // city Info
