@@ -1,4 +1,4 @@
-## Weather App using Vanilla JS 
+### Weather App using Vanilla JS 
 
 # Project Details
 
