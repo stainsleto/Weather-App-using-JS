@@ -34,5 +34,6 @@ Insert your API Key inside apiKey const and remove the config text present there
 
 ## Author 
 
-linkedin - linkedin.com/in/stains-leto
-Twitter - twitter.com/letostains
+linkedin - https://linkedin.com/in/stains-leto
+
+Twitter - https://twitter.com/letostains
