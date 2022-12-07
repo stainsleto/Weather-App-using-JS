@@ -9,6 +9,15 @@
 
 const search = document.getElementById('search-icon'); 
 search.ontouchstart = getWeather ;
+const city = document.getElementById('city-input');
+city.addEventListener('keydown', (e) => {
+    if(e.code === "Enter"){
+       return getWeather()
+    }
+})
+    
+
+
 
 
 function getWeather(){
