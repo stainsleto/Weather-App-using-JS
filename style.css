@@ -7,25 +7,6 @@ body{
     background-image: url(./images/background.jpg);
 }
 
-.main-box{
-    display:flex;
-    flex-direction:column;
-    margin:60px 350px 0px 350px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-#main-title{
-    text-align:center;
-}
-
-.inner-box{
-    border:1px solid black;
-    margin:20px;
-    padding:20px;
-  
-}
 
 /* dash page */
 
@@ -54,9 +35,7 @@ body{
     justify-content:center;
     gap:30px;
     margin-top:5em;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;  
    
 }
 
@@ -147,7 +126,8 @@ body{
 
 #city-input{
     border: 2px solid black;
-    border-radius:30px;
+    border-radius:10px;
+    padding:10px;
 }
 
 .weather-desc-title{
@@ -240,13 +220,41 @@ body{
     margin: -5px 0px 30px 0px;
 }
 
-@media (max-width:500) {
+@media screen and (max-width:1000px) {
     .city-value {
-        font-size:12px;
-    }
-    #pressure-box{
-        width:10em;
+        font-size:16px;
     }
 
+    #hero{
+        display:flex;
+        flex-direction:column;
+    }
+    #weather-box{
+        width:70vw;
+        text-align:center;
+    }
+
+    #city-box{
+        width:70vw;
+        text-align:center;
+    }
+   
+
+}
+
+
+@media screen and (max-width:700px){
+
+    #header {
+        width:80vw;
+        margin: 20px 10px 0px 10px;
+    }
+
+    #hello-box h4{
+        display:none;
+    }
+    #city-input{
+        width:150px;
+    }
 
 }
