@@ -1,11 +1,3 @@
-// const hero = document.getElementById('hero');
-
-// if (document.getElementById('city-form').value == "" ){
-//     hero.hide()
-// }
-// else{
-//     hero.show()
-// }
 
 const search = document.getElementById('search-icon'); 
 search.ontouchstart = getWeather ;
@@ -16,10 +8,9 @@ city.addEventListener('keydown', (e) => {
     }
 })
 
+
 function getWeather(){
     const apiKey = config.apiKey;
-    
-
     const city = document.getElementById('city-input').value;  // city Info
 
     const currentWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
