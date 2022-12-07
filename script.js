@@ -7,6 +7,9 @@
 //     hero.show()
 // }
 
+const search = document.getElementById('search-icon'); 
+search.ontouchstart = getWeather ;
+
 
 function getWeather(){
     const apiKey = "b13b3dd8053e9d7f1016053308bd0eff";
