@@ -6,6 +6,9 @@
 // else{
 //     hero.show()
 // }
+const button = document.getElementById('search-icon')
+
+button.addEventListener('touchstart',getWeather)
 
 
 function getWeather(){
@@ -13,6 +16,7 @@ function getWeather(){
     
 
     const city = document.getElementById('city-input').value;  // city Info
+    
 
     const currentWeather = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`)
     const allData = currentWeather.then(response => response.json());
@@ -32,6 +36,7 @@ function getWeather(){
         document.getElementById("wind-speed-value").textContent = (daata.wind.speed) + " Km/h" ;
         document.getElementById("temp-min-value").textContent = (daata.main.temp_min - 273).toFixed(0) + "°C";
         document.getElementById("temp-max-value").textContent = (daata.main.temp_max - 273).toFixed(0) + "°C";
+
     });
 
     
