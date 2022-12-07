@@ -9,7 +9,7 @@
 const button = document.getElementById('search-icon')
 
 button.addEventListener('touchstart',() => {
-    alert("Touch working")
+    return getWeather()
 })
 
 
