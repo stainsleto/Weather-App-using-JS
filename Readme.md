@@ -26,7 +26,7 @@ Used Promises in JavaScript to fetch data from the Json File
 
 Get API from  -->  https://openweathermap.org/api
 
-Insert API Key with your new API value by creating a config.js file
+Insert your API Key inside apiKey const and remove the config text present there.
 
 # Author 
 
